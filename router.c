@@ -4,7 +4,6 @@ int main(int argc, char *argv[])
 {
 	char buf[MAX_PACKET_LEN];
 
-	// Do not modify this line
 	init(argc - 2, argv + 2);
 
 	state_t cur_state = STATE_INITIAL;
