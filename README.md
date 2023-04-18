@@ -1,6 +1,6 @@
 # Router-Dataplane
 
-This is a C implementation of a router that knows how to handle IPv4, ARP and ICMP packets.
+This is a C implementation of a router that knows how to handle IPv4, ARP and ICMP packets. The code is structured so that the router works like a state machine. The actual implementation can be found in the file lib/state.c.
 
 The packet routing process uses a very efficient algorithm to find the Longest Prefix Match in a routing table. 
 Using a Trie data structure the search time depends only on the length of the searched key and not on the size of the data set. 
